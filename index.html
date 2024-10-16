@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <style>
+      #one>.allu>.aathu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+}  
+#two>.allu>.aathu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+}  
+#three>.allu>.aathu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+}     
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+
+
+    min-height: 400px;
+    padding-top: 100px;
+    background: navy;
+}
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.curve::before {
+    content: '';
+
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: white;
+}
+
+.curve::after {
+    content: '';
+
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: navy;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    width:100%;
+    color: blue;
+
+
+
+}
+
+nav>.second {
+    display: flex;
+    gap: 10px;
+
+}
+
+.five {
+    display: flex;
+    background-color: navy;
+    color: beige;
+}
+
+.six {
+    display: flex;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.three {
+    margin-top: 100px;
+}
+
+
+.eight,
+.twelve,
+.fifteen,
+.container,
+.arjun {
+    display: flex;
+    margin-top: 200px;
+}
+
+.eight {
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nine {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.twelve {
+    flex-direction: row-reverse;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fifteen {
+    justify-content: space-evenly;
+}
+
+.arjun {
+    background-color: lightblue;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.kiran {
+    display: flex;
+    margin-top: 200px;
+}
+
+.allu {
+    display: flex;
+}
+
+.sixteen {
+    margin-top: 200px;
+    margin-left: 350px;
+}
+
+.container {
+    margin-top: 200px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    background-color: #b3b4b8;
+    height: max-content;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    margin-top: 200px;
+}
+
+.last {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.ten {
+    animation-name: kira;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes kira {
+    from {
+        translate: -100px;
+    }
+
+    to {
+        translate: 200px;
+    }
+}
+
+.ten2 {
+    animation-name: reddy;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes reddy {
+    from {
+        translate: 300px;
+    }
+
+    to {
+        translate: -100px;
+    }
+}
+.eight,.fifteen{
+    animation-name: virat;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+@keyframes virat{
+    from{
+        translate: 0px 100px;
+    }
+    to{
+        translate: 0px 0px;
+    }
+}
+.six{
+    animation-name: preethi;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+@keyframes preethi {
+    from {
+        translate: 300px;
+    }
+
+    to {
+        translate: -100px;
+    }
+}
+
+#one>.allu>.aathu>.anuska:hover {
+    transform: scaleX(1.5);
+    opacity: 0.3;
+}
+#two>.allu>.aathu>.anuska:hover {
+    transform: scaleX(1.5);
+    opacity: 0.3;
+}
+#three>.allu>.aathu>.anuska:hover {
+    transform: scaleX(1.5);
+    opacity: 0.3;
+}
+
+
+.four>.sushma {
+    animation-name: love;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes love {
+    from {
+        translate: -100px -400px;
+    }
+
+    to {
+        translate: 0px 0px;
+    }
+}
+
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    border: 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade>.allu>.aathu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.anuska:hover .middle{
+    opacity: 1;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+@media screen and (width<760px){
+    .eight,.nine,.twelve,.fifteen,.arjun,.kiran,.only,.five{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #first,footer{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .sixteen{
+        translate:-310px;
+    }
+    #carouselExampleIndicators{
+        translate:-400px;
+        width:max-content;
+    }
+    .kiran,.nine,.twelve{
+        translate:-50px;
+    }
+    .carousel-control-next{
+        left:440px;
+    }
+    
+    .footer{
+        height:max-content;
+    }
+    .carousel-indicators{
+        left:0px;
+    }
+   .three,nav{
+       translate:-50px; 
+    }
+    
+
+}
+    </style>
+
+    
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <section style="color: white;">
+        <!-- content here -->
+        <div class="curve"></div>
+        <nav >
+            <div class="first" style="padding-left: 50px;">
+                <h1>Jevelin</h1>
+            </div>
+            <div class="second">
+                <h4>home</h4>
+                
+                <h4>services</h4>
+                <h4>prices</h4>
+                <h4>news</h4>
+                <i class="fa fa-instagram" style="font-size:24px"></i>
+                <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                <i class="fa fa-twitter" style="font-size:24px"></i>
+            </div>
+        </nav>
+        <div class="navy">
+            
+            <div class="five" style="margin-left: 80px;">
+                <div class="three">
+                    <h4 style="letter-spacing: 2px;word-spacing: 5px;">Main slogan for today</h4><br><br>
+                    <h1>Organise your ideas and<br> future plans with our<br> smart business planner</h1><br><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Sit vel modi libero et repellat nisi
+                        eius enim dolorem hic<br> veniam accusamus aliquam autem, eaque expedita, nostrum soluta
+                        exercitationem voluptates assumenda.</p><br><br>
+                    <button style="padding: 20px;border-radius: 20px;color: blue;">Explore the product</button>
+                </div>
+                <div class="four" style="translate: -200px -50px;">
+                    <div class=sushma><img src="projectk.png" style="translate: 250px 100px;"></div>
+                    <div class="six">
+                        <img src="projectplant.png" width="100%" height="250vh" style="translate: 100px 90px;">
+                        <img src="projectkgirl.png" style="translate: 150px 0px;z-index: 1;">
+                        <img src="projectdesk.png" style="translate: 0px 10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="eight" style="margin-left: 100px;">
+        <div class="seven">
+            <i class="fa fa-paper-plane-o" style="margin-left: 100px;font-size:36px"></i><br><br><br><br>
+            <h1>Synchronise Emails</h1><br>
+            <p>Lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc</p>
+        </div>
+        <div class="seven">
+            <i class="fa fa-calculator" style="margin-left: 100px;font-size:36px"></i><br><br><br><br>
+            <h1>Synchronise Emails</h1><br>
+            <p>Lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc</p>
+        </div>
+        <div class="seven">
+            <i class="fa fa-lock" style="margin-left: 100px;font-size:36px"></i><br><br><br><br>
+            <h1>Synchronise Emails</h1><br>
+            <p>Lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc</p>
+        </div>
+        <div class="seven">
+            <i class="fa fa-lightbulb-o" style="margin-left: 100px;font-size:36px"></i><br><br><br><br>
+            <h1>Synchronise Emails</h1><br>
+            <p>Lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc</p>
+        </div>
+    </div>
+    <div class="nine">
+        <div class="ten">
+            <img src="projectgirlmap.png">
+        </div>
+        <div class="animate__animated animate__flipInX" style="animation-iteration-count: infinite;">
+            <h3>Smart assistant</h3>
+            <h1>Let our unique AI Assistant plan months ahead</h1>
+            <p>Ut et nisi ac dui pulvinar consequat. Curabitur aliquam, felis ut ultricies porta, ante dolor iaculis
+                ante, ante dolor iaculis anteet fringilla ligula tortor eget nisi.</p>
+        </div>
+    </div>
+    <div class="twelve">
+        <div class="ten2">
+            <img src="projectboyphn.png">
+        </div>
+        <div class="animate__animated animate__flipInX" style="animation-iteration-count: infinite;">
+            <h3>One for all</h3>
+            <h1>Synhronize your social life, email and contacts</h1>
+            <p>Donec et augue pharetra, rutrum leo at, laoreet nulla. Nullam mattis sed justo quis sollicitudin.
+                Maecenas lobortis fermentum fringilla. Vivamus in diam erat.</p>
+        </div>
+    </div>
+    <h3 style="text-align: center;margin-top: 200px;">Intro video</h3>
+    <h1 style="text-align: center;">About product in a short video</h1>
+    <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/g4n2yVPnQzs?si=y8b4aLFN-BBpFJb2"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="fifteen">
+        <div class="thirteen">
+            <h1>Video quote</h1><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br> Mauris vitae sodales lectus, non
+                ultrices
+                nisi. In varius, leo<br><br> non gravida tristique</p>
+        </div>
+        <div class="forteen">
+            <h1>List about video</h1><br>
+            <ul style="list-style-type:disc;">
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p><br>
+                </li>
+                <li>
+                    <p>Odales lectus, non ultrices nisi</p><br>
+                </li>
+                <li>
+                    <p>In varius, leo non gravida tristique lectus</p><br>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="arjun">
+
+        <div class="seven">
+            <h3 style="margin-left: 150px;">Basic</h3>
+            <h1 style="margin-left: 150px;">$19</h1>
+
+            <p style="line-height: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo in
+                adipisci non tempore
+                molestias quibusdam totam fugit animi iure ullam aperiam ipsum assumenda velit saepe, exercitationem
+                repudiandae perferendis at?</p>
+            <button
+                style="padding: 20px;border-radius: 20px;color: white;background-color: blue;margin-left: 120px;">Explore
+                the product</button>
+        </div>
+        <div class="seven"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-left: 50px;background-color: white;">
+            <h3 style="margin-left: 150px;">Pro</h3>
+            <h1 style="margin-left: 150px;">$29</h1>
+            <p style="line-height: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo in
+                adipisci non tempore
+                molestias quibusdam totam fugit animi iure ullam aperiam ipsum assumenda velit saepe, exercitationem
+                repudiandae perferendis at?</p>
+            <button
+                style="padding: 20px;border-radius: 20px;color: white;background-color: blue;margin-left: 120px;">Explore
+                the product</button>
+        </div>
+        <div class="seven" style="margin-left: 50px;">
+            <h3 style="margin-left: 150px;">Business?</h3>
+            <h1 style="margin-left: 150px;">Custom</h1>
+            <p style="line-height: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo in
+                adipisci non tempore
+                molestias quibusdam totam fugit animi iure ullam aperiam ipsum assumenda velit saepe, exercitationem
+                repudiandae perferendis at?</p>
+            <button
+                style="padding: 20px;border-radius: 20px;color: white;background-color: blue;margin-left: 120px;">Explore
+                the product</button>
+        </div>
+
+    </div>
+    <div class="kiran" style="margin-left: 100px;margin-right: 70px;">
+        <div class="animate__animated animate__flipInX" style="animation-iteration-count: infinite;">
+
+            <h3>Happy customers!</h3><br><br>
+            <h1>We give our best to make<br> you happy!</h1><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Libero explicabo in adipisci non tempore
+                molestias<br> quibusdam totam fugit animi iure ullam aperiam ipsum <br>assumenda velit saepe,
+                exercitationem
+                repudiandae perferendis at?</p>
+
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide " style="width: max-content;height:max-content">
+            <div class="carousel-indicators" style="translate: 200px;">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner " style="width: max-content;height:max-content">
+              <div class="carousel-item active " style="background-color: white;">
+                <div class="d-block w-100" style="background-color: lightblue;border-radius:10px;height: 60vh;width:80%;margin-left: 400px;">
+                <img src="projectbitch1.jpg" style="translate:-130px -100px;opacity: 80%;border-radius: 50px;">
+                <img src="projectbitch2.jpg" style="translate:-220px 250px;opacity: 50%;border-radius: 50px;">
+                <img src="projectbitch2.jpg" style="translate:250px 60px;opacity: 50%;border-radius: 50px;">
+                <div class="pilla" style="translate:20px -20px;width: max-content;height:max-content">
+                    <img src="projectbitch.jpg" style="border-radius: 50px;">
+                    <p>We take photos to capture moments and people that we love.</p>
+                    <p> We are happy when there are more and more people who like<br> what we do.</p>
+                    <h3 style="margin-top: 100px;">developer</h3>
+                </div>
+            </div>
+              </div>
+              <div class="carousel-item" style="background-color: white;">
+                <div class="d-block w-100" style="background-color: lightblue;border-radius:10px;height: 60vh;width:80%;margin-left: 400px;">
+                <img src="projectbitch1.jpg" style="translate:-130px -100px;opacity: 80%;border-radius: 50px;">
+                <img src="projectbitch2.jpg" style="translate:-220px 250px;opacity: 50%;border-radius: 50px;">
+                <img src="projectbitch2.jpg" style="translate:250px 60px;opacity: 50%;border-radius: 50px;">
+                <div class="pilla" style="translate:20px -20px;">
+                    <img src="projectbitch.jpg" style="border-radius: 50px;">
+                    <p>We take photos to capture moments and people that we love.</p>
+                    <p> We are happy when there are more and more people who like<br> what we do.</p>
+                    <h3 style="margin-top: 100px;">developer</h3>
+                </div>
+            </div>
+              </div>
+              <div class="carousel-item" style="background-color: white;">
+                <div class="d-block w-100" style="background-color: lightblue;border-radius:10px;height: 60vh;width:80%;margin-left: 400px;">
+                <img src="projectbitch1.jpg" style="translate:-130px -100px;opacity: 80%;border-radius: 50px;">
+                <img src="projectbitch2.jpg" style="translate:-220px 250px;opacity: 50%;border-radius: 50px;">
+                <img src="projectbitch2.jpg" style="translate:250px 60px;opacity: 50%;border-radius: 50px;">
+                <div class="pilla" style="translate:20px -20px;">
+                    <img src="projectbitch.jpg" style="border-radius: 50px;">
+                    <p>We take photos to capture moments and people that we love.</p>
+                    <p> We are happy when there are more and more people who like<br> what we do.</p>
+                    <h3 style="margin-top: 100px;">developer</h3>
+                </div>
+            </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="translate:370px">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+    <div class="only">
+    <div class="sixteen">
+        <h1>Subscribe to be up to date with our latest news and stories</h1>
+        <label for="username">enter username</label>
+        <input type="text" id="username" placeholder="enter name"
+            style="height:50px;line-height: 50px;color: #a2a1b2 ;width:400px">
+        <button style="background-color: blue;padding: 20px;border-radius: 10px;color: white;">subscribe</button>
+        <p style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae sodales
+        </p>
+    </div>
+    <div id="carouselExampleIndicators2" class="carousel slide mt-5" id="first" style="border:0px;margin-top: 100px;">
+        <div class="carousel-indicators" style="background-color: black;width: 60px;translate:420px 50px">
+          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100" id="one" style="background-color:white;">
+                
+                    <div class="allu" style="justify-content: space-evenly;">
+                        <div class="aathu" style="overflow: hidden;position: relative;">
+                            <div class="anuska">
+                            <img src="projeckk.jpg" width="100%" height="300px" class="image"
+                                style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                                <div class="middle">
+                                    <div class="text"><i class="fa fa-search"></i></div>
+                                </div>
+                            </div>  
+                           
+                            <h1>Newest technology</h1><br><br>
+                            <h2>All design</h2><br>
+                            <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                                which i enjoy with
+                                my whole heart</p>
+                        </div>
+                        <div class="aathu" style="overflow: hidden;position: relative;">
+                            <div class="anuska">
+                            <img src="PROJECK2.jpg" width="100%" height="300px"
+                                style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                                <div class="middle">
+                                    <div class="text"><i class="fa fa-search"></i></div>
+                                </div>
+                            </div>     
+                            <h1>Newest technology</h1><br>
+                            <h2>All design</h2><br>
+                            <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                                which i enjoy with
+                                my whole heart</p>
+                        </div>
+                        <div class="aathu" style="overflow: hidden;position: relative;">
+                            <div class="anuska">
+                            <img src="projectk3.jpg" width="100%" height="300px"
+                                style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                                <div class="middle">
+                                    <div class="text"><i class="fa fa-search"></i></div>
+                                </div>
+                            </div> 
+                            <h1>Newest technology</h1><br>
+                            <h2>All design</h2><br>
+                            <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                                which i enjoy with
+                                my whole heart</p>
+                        </div>
+                    </div>
+        
+                
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <div class="d-block w-100" id="two" style="background-color:white;">
+                <div class="allu" style="justify-content: space-evenly;">
+                    <div class="aathu" style="overflow: hidden;position: relative;">
+                        <div class="anuska">
+                        <img src="projectk4.jpg" width="100%" height="300px"
+                            style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                            <div class="middle">
+                                <div class="text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <h1>Newest technology</h1><br>
+                        <h2>All design</h2><br>
+                        <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                            which i enjoy with
+                            my whole heart</p>
+                    </div>
+                    <div class="aathu" style="overflow: hidden;position: relative;">
+                        <div class="anuska">
+                        <img src="projectk5.jpg" width="100%" height="300px"
+                            style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                            <div class="middle">
+                                <div class="text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <h1>Newest technology</h1><br>
+                        <h2>All design</h2><br>
+                        <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                            which i enjoy with
+                            my whole heart</p>
+                    </div>
+                    <div class="aathu" style="overflow: hidden;position: relative;">
+                        <div class="anuska">
+                        <img src="projectk6.jpg" width="100%" height="300px"
+                            style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                            <div class="middle">
+                                <div class="text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <h1>Newest technology</h1><br>
+                        <h2>All design</h2><br>
+                        <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                            which i enjoy with
+                            my whole heart</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100" id="three" style="background-color:white;">
+                <div class="allu" style="justify-content: space-evenly;">
+                    <div class="aathu" style="overflow: hidden;position: relative;">
+                        <div class="anuska">
+                        <img src="projectk7.jpg" width="100%" height="300px"
+                            style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                            <div class="middle">
+                                <div class="text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <h1>Newest technology</h1><br>
+                        <h2>All design</h2><br>
+                        <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                            which i enjoy with
+                            my whole heart</p>
+                    </div>
+                    <div class="aathu" style="overflow: hidden;position: relative;">
+                        <div class="anuska">
+                        <img src="projectk8.jpg" width="100%" height="300px"
+                            style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                            <div class="middle">
+                                <div class="text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <h1>Newest technology</h1><br>
+                        <h2>All design</h2><br>
+                        <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                            which i enjoy with
+                            my whole heart</p>
+                    </div>
+                    <div class="aathu" style="overflow: hidden;position: relative;">
+                        <div class="anuska">
+                        <img src="projeckk.jpg" width="100%" height="300px"
+                            style="transition: transform 0.3s ease-in-out;object-fit: cover;">
+                            <div class="middle">
+                                <div class="text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                        <h1>Newest technology</h1><br>
+                        <h2>All design</h2><br>
+                        <p>A wonderfful sernity has taken possesion of my entire soul like<br><br> sweet mornings of soul
+                            which i enjoy with
+                            my whole heart</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev" style="background-color: black;width:30px;height:30px;translate: 20px 280px;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next" style="background-color: black;width:30px;height:30px;translate: 0px 280px;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    <footer>
+        <div class="nineteen">
+            <h1>Jevelin</h1>
+            <h3>Follow our latest achievements and<br> information on social networks</h3>
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+            <i class="fa fa-facebook-f" style="font-size:36px"></i>
+            <i class="fa fa-twitter" style="font-size:36px"></i>
+
+
+        </div>
+        <div class="nineteen2">
+            <h1>Explore</h1>
+            <h3 style="font-weight:lighter;">privacy</h3>
+            <h3 style="font-weight:lighter;">About us</h3>
+            <h3 style="font-weight:lighter;">Testinomals</h3>
+
+        </div>
+        <div class="nineteen3">
+            <h1>Teamwork</h1>
+            <h3 style="font-weight:lighter;">partner</h3>
+            <h3 style="font-weight:lighter;">license</h3>
+            <h3 style="font-weight:lighter;">Review</h3>
+
+        </div>
+        <div class="nineteen4">
+            <h1>Markets</h1>
+            <h3 style="font-weight:lighter;">strategy</h3>
+            <h3 style="font-weight:lighter;">Adverstisement</h3>
+            <h3 style="font-weight:lighter;">Referals</h3>
+
+        </div>
+    </footer>
+    <div class="last">
+        <p>Copyright 2019 Shufflehoun. All rights reserved.</p>
+    </div>
+    
+</body>
+
+</html>
